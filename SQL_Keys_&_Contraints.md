@@ -16,4 +16,35 @@ They are of many types. A few of them are listed below;
 - These columns can have duplicate as well as NULL values.
 
 # Constraints
+Constraints mean some rules for data in the table.    
+A few of the constraints are;     
+
+- NOT NULL -> This specifies that the column value should not contain any null values.
+- UNIQUE -> This specifies that the column value always contains a unique value that should not repeat
+- PRIMARY KEY -> This specifies that the column value always contains a unique value that should not repeat as well as it should not contain null value
+- FOREIGN KEY -> A link between two different table
+    ```
+    Example of Foreign key:
+
+    CREATE TABLE student(
+    cust_id INT,
+    FOREIGN KEY (cust_id) references customer(id)  # Here the customer is another table and id is a column of that table
+    );
+    ```
+- DEFAULT -> sets the default value of a column
+    ```
+    Example:
+    salary INT DEFAULT 25000
+
+    Here if the column value was not entered then it will take the default value and will not put any empty value
+    ```
+- CHECK -> To limit the value in the column
+    ```
+    CREATE TABEL emp(
+    age INT CHECK(age >= 18)
+    );
+    ```
+
+
+
 
