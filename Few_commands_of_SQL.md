@@ -47,7 +47,7 @@ This command is used to show all the tables inside the databases.
 ## Table Related Queries
 __CREATE TABLE tb_name (parameter inside);__
 
-This command is used to creat a table.
+This command is used to create a table.
 ```
 Syntax:
 
@@ -67,6 +67,9 @@ CREATE TABLE student (
 );   
 
 ![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/4223bb48-44d0-4649-a641-40817c0ac95e)
+
+__SELECT col1, col2 FROM tb_name;__    
+This command is used to view columns1 and column2 data from the table.   
 
 __SELECT * FROM tb_name;__    
 This command is used to view all columns from the table.   
