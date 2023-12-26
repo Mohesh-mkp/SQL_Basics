@@ -43,3 +43,4 @@ _Example:_
 ![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/c95395c2-9a31-4547-9590-98784e08f5dc)
 
 
+__GROUP BY:__ 
