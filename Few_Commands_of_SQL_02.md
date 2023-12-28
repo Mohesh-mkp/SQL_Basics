@@ -43,4 +43,85 @@ _Example:_
 ![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/c95395c2-9a31-4547-9590-98784e08f5dc)
 
 
-__GROUP BY:__ 
+__GROUP BY:__ To group the rows with the same values.   
+```
+Note:
+Generally, we use group by with some aggregation function.
+```
+_Example:_    
+
+![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/d554e65d-52ec-4c44-966c-97b52202fbce)
+
+![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/50d45ea3-8608-4813-a793-416a444f5927)
+
+
+## Practice Question:
+- create a table of students and table consists of the following columns
+    -  rollno
+    -  Name
+    -  marks
+    -  City
+- Write the query to find average marks in each city in ascending order
+
+```
+Solution:
+
+CREATE DATABASE college;
+USE college;
+
+CREATE TABLE student(
+rollno INT PRIMARY KEY,
+name VARCHAR(50),
+city VARCHAR(15),
+marks INT
+);
+
+INSERT INTO student
+(rollno, name, city, marks)
+VALUES
+(101, 'Karan', 'Pune', 67),
+(102, 'John', 'Delhi', 69),
+(103, 'Joseph', 'Mumbai', 79),
+(104, 'Raghuram', 'Pune', 89),
+(105, 'Veera', 'Punjab', 99),
+(106, 'Yashwant', 'Delhi', 59);
+
+SELECT city, avg(marks)
+FROM student
+GROUP BY city
+ORDER BY city;
+
+```
+## Another Practice Question:
+![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/27aaa4d6-168c-4130-a1d1-5c3e82dcfa03)
+
+```
+Solution:
+Note: After the creation of the database of the given example only the following code is to be written.
+
+CREATE DATABASE customerPayment;
+USE customerPayment;
+CREATE TABLE payment(
+customer_id INT PRIMARY KEY,
+customer VARCHAR(50),
+mode VARCHAR(15),
+city VARCHAR(15)
+);
+INSERT INTO payment
+(customer_id, customer, mode, city)
+VALUES
+(all data to be inserted inside);
+
+SELECT mode, count(customer)
+FROM payment
+GROUP BY mode;
+
+```
+
+
+
+
+
+
+
+
