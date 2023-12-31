@@ -22,8 +22,28 @@ _Example:_
 
 ## UPDATE:
 Used to update existing rows.    
-_Syntax:_
+_Syntax:_      
 ![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/7987aefd-e9a1-4661-a3e7-0ed95f7b352f)    
+_Example:_    
+![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/2cae2de1-7079-412b-9be1-bd52a193973f)    
+![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/e9e219e7-737b-4f62-a5a0-577a2e41a922)     
 
+
+## DELETE:
+Used to delete existing rows.       
+
+_Syntax:_    
+![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/a8e5fc35-b648-471b-81a1-b47d1b2af602)    
+
+
+_Example:_    
+![image](https://github.com/Mohesh-mkp/SQL_Basics/assets/101304247/8140d84c-f655-42ee-8c6d-b66a766be008)     
+
+
+```
+Note:
+If we want to delete the data entirely, we can use the command directly for that.
+DELETE FROM table_name;
+```
 
 
